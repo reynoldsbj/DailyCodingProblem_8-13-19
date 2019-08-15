@@ -1,0 +1,17 @@
+{
+  "name": "8-13-19",
+  "version": "1.0.0",
+  "description": "Finds the first missing positive integer in an array in linear time and linear space. Arrays can contain duplicates a",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Brian Reynolds",
+  "license": "ISC",
+  "devDependencies": {
+    "karma": "^4.2.0",
+    "karma-chrome-launcher": "^3.1.0",
+    "karma-firefox-launcher": "^1.2.0",
+    "karma-jasmine": "^2.0.1"
+  }
+}
