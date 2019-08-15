@@ -12,32 +12,31 @@
 
 function CreateFalseArray(length) {
     var arr = [];
-     for (var i=0; i<arr.length; i++) {
-         arr.push(false);
-     }
+    for (var i=0; i<arr.length; i++) {
+        arr.push(false);
+    }
 
-     return arr;
+    return arr;
 }
 
 function FlagValsNotMissing(arr, notMissingFlagArray) {
     for (var i=0; i<arr.length; i++) {
-         if (arr[i] > 0 && arr[i] < arr.length + 1) {
-             notMissingFlagArray[arr[i]-1] = true;
-         }
-     }
+        if (arr[i] > 0 && arr[i] < arr.length + 1) {
+            notMissingFlagArray[arr[i]-1] = true;
+        }
+    }
 }
 
 function FindFirstMissingPositiveInt(arr) {
     var i = 0;
-     while (arr[i] === true) {
-         i++;
-     }
+    while (arr[i] === true) {
+        i++;
+    }
 
-     return i+1;
+    return i+1;
 }
 
  function SolveProblem(arr) {
-     //var notMissingFlagArray = new Array(arr.length).fill(false);
      var notMissingFlagArray = CreateFalseArray(arr.lenght);
      FlagValsNotMissing(arr, notMissingFlagArray);
      return FindFirstMissingPositiveInt(notMissingFlagArray);
