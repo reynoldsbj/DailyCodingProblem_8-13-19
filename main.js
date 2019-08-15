@@ -12,7 +12,7 @@
 
 function CreateFalseArray(length) {
     var arr = [];
-    for (var i=0; i<arr.length; i++) {
+    for (var i=0; i<length; i++) {
         arr.push(false);
     }
 
@@ -37,7 +37,7 @@ function FindFirstMissingPositiveInt(arr) {
 }
 
  function SolveProblem(arr) {
-     var notMissingFlagArray = CreateFalseArray(arr.lenght);
+     var notMissingFlagArray = CreateFalseArray(arr.length);
      FlagValsNotMissing(arr, notMissingFlagArray);
      return FindFirstMissingPositiveInt(notMissingFlagArray);
  }
